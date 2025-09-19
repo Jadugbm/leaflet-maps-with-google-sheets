@@ -78,7 +78,7 @@ $(window).on('load', function() {
         // Add color to the crosswalk
         group2color[ group ] = points[i]['Marker Icon'].indexOf('.') > 0
           ? points[i]['Marker Icon']
-          : points[i]['Marker Color'];
+          : points[i]['Warna Tanda'];
       }
     }
 
@@ -121,7 +121,7 @@ $(window).on('load', function() {
         })
         : createMarkerIcon(point['Marker Icon'],
           'fa',
-          point['Marker Color'].toLowerCase(),
+          point['Warna Tanda'].toLowerCase(),
           point['Icon Color']
         );
 
